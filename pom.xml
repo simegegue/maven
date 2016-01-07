@@ -22,7 +22,14 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+ <profiles>
+   <profile>
+     <id> prof-1 </id>
+      <activation>
+	 <os>
+		<family>windows</family>
+	 </os>
+     </activation>
     <build>
         <plugins>
             <plugin>
@@ -40,4 +47,6 @@
             </plugin>
         </plugins>
     </build>
+    </profile>
+    </profiles>
 </project>
