@@ -27,7 +27,7 @@
      <id> prof-1 </id>
       <activation>
 	 <os>
-		<family>windows</family>
+		<family>linux</family>
 	 </os>
      </activation>
     <build>
