@@ -3,8 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>prueba-app</groupId>
-  <artifactId>app3</artifactId>
-  <version>1</version>
+  <artifactId>78219347G</artifactId>
   <packaging>jar</packaging>
 
   <name>app</name>
@@ -22,6 +21,14 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <profiles>
+  	<profile>
+  	<id>Mi id</id>
+  	<activation>
+  	<os>
+  		<family>windows</family>
+  	</os>
+  	</activation>
   <build>
         <plugins>
             <plugin>
@@ -29,7 +36,17 @@
                 <artifactId>maven-jetty-plugin</artifactId>
                 <version>6.1.10</version>
             </plugin>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+        	<verbose>true</verbose>
+        </configuration>
+        </plugin>
         </plugins>
     </build>
-
+    </profile>
+	</profiles>
+  <version>2</version>
 </project>
